@@ -1,9 +1,0 @@
-streamlit
-pandas
-matplotlib
-plotly
-gspread
-oauth2client
-streamlit-authenticator
-openpyxl
-requests
