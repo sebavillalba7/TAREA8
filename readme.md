@@ -53,7 +53,7 @@ TAREA/
     ```
 
 5. **Accede desde el navegador:**
-    - https://tarea8-djz2ttg77xpypxg9veqjza.streamlit.app/*
+    - https://tarea8-djz2ttg77xpypxg9veqjza.streamlit.app/
 
 ---
 
