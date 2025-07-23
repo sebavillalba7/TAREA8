@@ -55,6 +55,19 @@ st.set_page_config(page_title="Panel Deportivo", page_icon="🏃‍♂️", layo
 
 # ======= ESTILOS PERSONALIZADOS CSS =======
 
+st.markdown(
+    """
+    <style>
+    /* SOLO cambia el color del texto seleccionado en los selectbox */
+    .stSelectbox > div > div > div > span {
+        color: #212529 !important; /* gris*/
+        font-weight: bold;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 custom_css = """
 <style>
 /* Fondo principal */
