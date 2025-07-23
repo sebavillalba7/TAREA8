@@ -7,7 +7,6 @@ oauth2client
 streamlit-authenticator==0.2.3
 openpyxl
 requests
-base64
 os
 fpdf
 python-dotenv
