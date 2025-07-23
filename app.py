@@ -49,24 +49,51 @@ def exportar_partidos_pdf(df_partidos, jugador):
     pdf.output(filename)
     return filename
 
-# ======= CONFIGURACIÓN GENERAL =======
-
-st.set_page_config(page_title="Panel Deportivo", page_icon="🏃‍♂️", layout="wide")
-
-# ======= ESTILOS PERSONALIZADOS CSS =======
-
+# ======= CONFIGURACIÓN MARDOWN GENERAL =======
 st.markdown(
     """
     <style>
-    /* SOLO cambia el color del texto seleccionado en los selectbox */
-    .stSelectbox > div > div > div > span {
-        color: #212529 !important; /* gris*/
+    /* Selectbox cerrado: fondo blanco, texto oscuro */
+    div[data-baseweb="select"] > div {
+        background-color: #fff !important;   /* Fondo blanco */
+        color: #212529 !important;           /* Texto oscuro */
         font-weight: bold;
+        border-radius: 8px !important;
+    }
+
+    /* Selectbox abierto (menú): fondo blanco, texto oscuro */
+    div[data-baseweb="popover"] {
+        background-color: #fff !important;
+        color: #212529 !important;
+        border-radius: 8px !important;
+    }
+
+    /* Opciones del menú: texto oscuro sobre fondo blanco */
+    div[data-baseweb="option"] {
+        background-color: #fff !important;
+        color: #212529 !important;
+        font-weight: bold;
+    }
+    /* Opción seleccionada (hover o activa) */
+    div[data-baseweb="option"]:hover {
+        background-color: #f0f0f0 !important;  /* Gris claro */
+        color: #212529 !important;
+    }
+    div[data-baseweb="option"][aria-selected="true"] {
+        background-color: #e0e0e0 !important;  /* Gris un poco más oscuro para la seleccionada */
+        color: #212529 !important;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
+
+# ======= CONFIGURACIÓN GENERAL =======
+
+st.set_page_config(page_title="Panel Deportivo", page_icon="🏃‍♂️", layout="wide")
+
+# ======= ESTILOS PERSONALIZADOS CSS =======
 
 custom_css = """
 <style>
