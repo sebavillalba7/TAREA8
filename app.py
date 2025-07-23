@@ -49,7 +49,7 @@ def exportar_partidos_pdf(df_partidos, jugador):
     pdf.output(filename)
     return filename
 
-# ======= CONFIGURACIÓN MARDOWN GENERAL =======
+# ======= CONFIGURACIÓN MARDOWN GENERAL y BOTON DE CERRAR SESION, PARA QUE FUNCIONE PUBLICADO POR STREAMLIT CLOUD=======
 st.markdown(
     """
     <style>
@@ -87,7 +87,27 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
+st.markdown(
+    """
+    <style>
+    /* Mejora visibilidad del botón Cerrar Sesión en sidebar */
+    button[kind="secondary"] {
+        color: #212529 !important;           /* Texto oscuro */
+        background-color: #fff !important;   /* Fondo blanco */
+        border: 2px solid #0cf2ff !important;/* Borde celeste */
+        border-radius: 10px !important;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        transition: 0.2s;
+    }
+    button[kind="secondary"]:hover {
+        background-color: #e0f7fa !important;/* Fondo celeste suave en hover */
+        color: #212529 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # ======= CONFIGURACIÓN GENERAL =======
 
