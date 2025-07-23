@@ -6,7 +6,6 @@ import streamlit_authenticator as stauth
 import pandas as pd
 import plotly.express as px
 import numpy as np
-import base64
 import requests
 from fpdf import FPDF
 from dotenv import load_dotenv
