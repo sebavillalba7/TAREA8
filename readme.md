@@ -53,7 +53,7 @@ TAREA/
     ```
 
 5. **Accede desde el navegador:**
-    - [http://localhost:8501](http://localhost:8501) *(o la URL de red que te muestra Streamlit)*
+    - https://tarea8-djz2ttg77xpypxg9veqjza.streamlit.app/*
 
 ---
 
