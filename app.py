@@ -49,7 +49,7 @@ def exportar_partidos_pdf(df_partidos, jugador):
     pdf.output(filename)
     return filename
 
-# ======= CONFIGURACIÓN MARDOWN GENERAL y BOTON DE CERRAR SESION, PARA QUE FUNCIONE PUBLICADO POR STREAMLIT CLOUD=======
+# ======= CONFIGURACIÓN MARDOWN GENERAL, BOTON DE CERRAR SESION y LOGIN PARA QUE FUNCIONE PUBLICADO POR STREAMLIT CLOUD=======
 st.markdown(
     """
     <style>
@@ -103,6 +103,40 @@ st.markdown(
     button[kind="secondary"]:hover {
         background-color: #e0f7fa !important;/* Fondo celeste suave en hover */
         color: #212529 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <style>
+    /* Campo de texto del login */
+    input[type="text"], input[type="password"] {
+        color: #212529 !important;              /* Texto oscuro */
+        background-color: #fff !important;      /* Fondo blanco */
+        font-weight: bold;
+        border-radius: 8px;
+        border: 2px solid #0cf2ff !important;   /* Borde celeste, opcional */
+        padding: 8px;
+    }
+    /* Placeholder del input (texto por defecto) */
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+        color: #888 !important;                 /* Gris medio */
+        opacity: 1;
+        font-weight: normal;
+    }
+    /* Botón de login */
+    button[kind="primary"] {
+        background-color: #0cf2ff !important;   /* Botón celeste */
+        color: #102542 !important;              /* Texto azul oscuro */
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    button[kind="primary"]:hover {
+        background-color: #0ae0e0 !important;   /* Celeste más fuerte */
+        color: #102542 !important;
     }
     </style>
     """,
