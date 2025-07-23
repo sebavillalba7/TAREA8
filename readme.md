@@ -11,6 +11,7 @@ Esta aplicación permite la visualización, filtrado y exportación de datos fí
 
 ## Estructura del proyecto
 
+```plaintext
 TAREA/
 │
 ├── app.py
@@ -26,9 +27,8 @@ TAREA/
 ├── controllers/
 ├── common/
 └── pages/
+```
 
-
----
 
 ## Instalación y ejecución
 
